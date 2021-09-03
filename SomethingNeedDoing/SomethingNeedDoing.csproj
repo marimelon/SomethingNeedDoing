@@ -63,7 +63,8 @@
     <PackageReference Include="InputSimulator" Version="1.0.4" />
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
     <PackageReference Include="System.Threading.Channels" Version="5.0.0" />
-    <ProjectReference Include="$(SolutionDir)lib\FFXIVClientStructs\FFXIVClientStructs.csproj" />
+    <PackageReference Include="XivCommon" Version="2.3.0" />
+    <ProjectReference Include="..\lib\FFXIVClientStructs\FFXIVClientStructs.csproj" />
     <ProjectReference Include="..\lib\ClickLib\ClickLib\ClickLib.csproj" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>$(DalamudLibPath)Newtonsoft.Json.dll</HintPath>

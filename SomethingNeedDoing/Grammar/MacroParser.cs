@@ -43,6 +43,7 @@ namespace SomethingNeedDoing.Grammar
                 {
                     "/ac" => ActionCommand.Parse(line),
                     "/action" => ActionCommand.Parse(line),
+                    "/checkdurability" => CheckDurabilityCommand.Parse(line),
                     "/click" => ClickCommand.Parse(line),
                     "/loop" => LoopCommand.Parse(line),
                     "/require" => RequireCommand.Parse(line),

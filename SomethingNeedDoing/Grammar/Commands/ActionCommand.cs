@@ -70,6 +70,10 @@ namespace SomethingNeedDoing.Grammar.Commands
                 var dataWaiter = Service.EventFrameworkManager.DataAvailableWaiter;
                 dataWaiter.Reset();
 
+                var action = Service.ActionManager.GetCraftAction(this.actionName);
+                if (action != null)
+                    Service.ActionManager.WaitCanUseAction(action.Value);
+
                 Service.ChatManager.SendMessage(this.Text);
 
                 await this.PerformWait(token);

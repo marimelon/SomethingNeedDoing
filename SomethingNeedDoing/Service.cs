@@ -26,6 +26,11 @@ namespace SomethingNeedDoing
         internal static PluginAddressResolver Address { get; set; } = null!;
 
         /// <summary>
+        /// Gets or sets the plugin action manager.
+        /// </summary>
+        internal static ActionManager ActionManager { get; set; } = null!;
+
+        /// <summary>
         /// Gets or sets the plugin chat manager.
         /// </summary>
         internal static ChatManager ChatManager { get; set; } = null!;

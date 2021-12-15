@@ -30,6 +30,7 @@ namespace SomethingNeedDoing
             Service.Address = new PluginAddressResolver();
             Service.Address.Setup();
 
+            Service.ActionManager = new ActionManager();
             Service.ChatManager = new ChatManager();
             Service.EventFrameworkManager = new EventFrameworkManager();
             Service.MacroManager = new MacroManager();
@@ -62,6 +63,7 @@ namespace SomethingNeedDoing
             Service.MacroManager?.Dispose();
             Service.EventFrameworkManager?.Dispose();
             Service.ChatManager?.Dispose();
+            Service.ActionManager?.Dispose();
         }
 
         /// <summary>

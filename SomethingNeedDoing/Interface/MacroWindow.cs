@@ -434,7 +434,7 @@ namespace SomethingNeedDoing.Interface
             }
 
             ImGui.PushItemWidth(-1);
-            ImGui.PushFont(UiBuilder.MonoFont);
+            // ImGui.PushFont(UiBuilder.MonoFont);
 
             var contents = node.Contents;
             if (ImGui.InputTextMultiline($"##{node.Name}-editor", ref contents, 100_000, new Vector2(-1, -1)))
@@ -443,7 +443,7 @@ namespace SomethingNeedDoing.Interface
                 Service.Configuration.Save();
             }
 
-            ImGui.PopFont();
+            // ImGui.PopFont();
             ImGui.PopItemWidth();
         }
 
